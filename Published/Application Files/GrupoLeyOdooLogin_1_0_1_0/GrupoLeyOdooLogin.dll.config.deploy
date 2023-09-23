@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="GrupoLeyLoginForm.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <applicationSettings>
+        <GrupoLeyLoginForm.Properties.Settings>
+            <setting name="NetworkInterface" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="AutoCompleteLogins" serializeAs="String">
+                <value>SAdmin@local.me;neftalimich@local.me;admin@local.me;grupoley@tecnika.com.mx</value>
+            </setting>
+            <setting name="Database" serializeAs="String">
+                <value>grupoley-pruebas</value>
+            </setting>
+            <setting name="LoginUrl" serializeAs="String">
+                <value>http://192.168.1.80:8069/</value>
+            </setting>
+            <setting name="AutoCompleteCredentials" serializeAs="String">
+                <value>041182652176;041752667297</value>
+            </setting>
+            <setting name="DefaultBrowser" serializeAs="String">
+                <value>edge</value>
+            </setting>
+            <setting name="Devices" serializeAs="String">
+                <value>[{"id": 1, "name": "Dispositivo 1"},{"id": 2, "name": "Dispositivo 2"}]</value>
+            </setting>
+        </GrupoLeyLoginForm.Properties.Settings>
+    </applicationSettings>
+</configuration>
