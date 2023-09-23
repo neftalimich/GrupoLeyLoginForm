@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GrupoLeyLoginForm.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="NetworkInterface" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AutoCompleteLogins" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SAdmin@local.me;neftalimich@local.me;admin@local.me;grupoley@tecnika.com.mx</Value>
+    </Setting>
+    <Setting Name="Database" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">grupoley-pruebas</Value>
+    </Setting>
+    <Setting Name="LoginUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://192.168.1.80:8069/</Value>
+    </Setting>
+    <Setting Name="AutoCompleteCredentials" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">041182652176;041752667297</Value>
+    </Setting>
+    <Setting Name="DefaultBrowser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">edge</Value>
+    </Setting>
+    <Setting Name="Devices" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">[{"id": 1, "name": "Dispositivo 1"},{"id": 2, "name": "Dispositivo 2"}]</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

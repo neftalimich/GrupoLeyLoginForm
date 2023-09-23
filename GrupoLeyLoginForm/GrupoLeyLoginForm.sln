@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrupoLeyLoginForm", "GrupoLeyLoginForm\GrupoLeyLoginForm.csproj", "{BD3EAEFC-F85E-4A33-B750-4EDE504A2EBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD3EAEFC-F85E-4A33-B750-4EDE504A2EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD3EAEFC-F85E-4A33-B750-4EDE504A2EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD3EAEFC-F85E-4A33-B750-4EDE504A2EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD3EAEFC-F85E-4A33-B750-4EDE504A2EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF088E6C-B402-4F41-84C6-6D510F6F6071}
+	EndGlobalSection
+EndGlobal
