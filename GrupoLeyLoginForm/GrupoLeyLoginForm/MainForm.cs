@@ -72,11 +72,12 @@ namespace GrupoLeyLoginForm
             identifier = GetIdentifier(Settings.Default.NetworkInterface);
             if (!string.IsNullOrEmpty(Settings.Default.NetworkInterface))
             {
-                lblIdentifier.Text = $"{Settings.Default.NetworkInterface}: {identifier}";
+                lblIdentifier.Text = Settings.Default.NetworkInterface;
+                txtIdentifier.Text = identifier;
             }
             else
             {
-                lblIdentifier.Text = identifier;
+                txtIdentifier.Text = identifier;
             }
 
             if (Settings.Default.LoginUrl == null)

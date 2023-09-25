@@ -43,13 +43,7 @@
             cbBrowsers = new ComboBox();
             cbDatabase = new ComboBox();
             btn_reload_db = new Button();
-            dgvDevices = new DataGridView();
             odooDeviceBindingSource = new BindingSource(components);
-            lblDevices = new Label();
-            btnReloadDevices = new Button();
-            cbDevice = new ComboBox();
-            pictureBox3 = new PictureBox();
-            btnAddDevice = new Button();
             odooDeviceBindingSource1 = new BindingSource(components);
             dgvCredentials = new DataGridView();
             credential = new DataGridViewTextBoxColumn();
@@ -62,9 +56,7 @@
             ((System.ComponentModel.ISupportInitialize)pic_url).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pic_db).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pic_browser).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgvDevices).BeginInit();
             ((System.ComponentModel.ISupportInitialize)odooDeviceBindingSource).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)odooDeviceBindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvCredentials).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvLogins).BeginInit();
@@ -130,7 +122,7 @@
             btn_save.FlatStyle = FlatStyle.Flat;
             btn_save.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btn_save.ForeColor = Color.White;
-            btn_save.Location = new Point(247, 731);
+            btn_save.Location = new Point(247, 544);
             btn_save.Name = "btn_save";
             btn_save.Size = new Size(217, 50);
             btn_save.TabIndex = 22;
@@ -146,7 +138,7 @@
             btn_cancel.FlatStyle = FlatStyle.Flat;
             btn_cancel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btn_cancel.ForeColor = Color.LightCoral;
-            btn_cancel.Location = new Point(24, 730);
+            btn_cancel.Location = new Point(24, 544);
             btn_cancel.Name = "btn_cancel";
             btn_cancel.Size = new Size(217, 50);
             btn_cancel.TabIndex = 21;
@@ -211,88 +203,9 @@
             btn_reload_db.UseVisualStyleBackColor = false;
             btn_reload_db.Click += BtnReloadDB_click;
             // 
-            // dgvDevices
-            // 
-            dgvDevices.AllowUserToAddRows = false;
-            dgvDevices.AllowUserToResizeRows = false;
-            dgvDevices.BackgroundColor = Color.White;
-            dgvDevices.BorderStyle = BorderStyle.None;
-            dgvDevices.CausesValidation = false;
-            dgvDevices.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDevices.Location = new Point(24, 600);
-            dgvDevices.Name = "dgvDevices";
-            dgvDevices.ReadOnly = true;
-            dgvDevices.RowHeadersWidth = 51;
-            dgvDevices.RowTemplate.Height = 29;
-            dgvDevices.Size = new Size(440, 125);
-            dgvDevices.TabIndex = 11;
-            dgvDevices.KeyDown += Dbv_KeyDown;
-            // 
             // odooDeviceBindingSource
             // 
             odooDeviceBindingSource.DataSource = typeof(OdooDevice);
-            // 
-            // lblDevices
-            // 
-            lblDevices.AutoSize = true;
-            lblDevices.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            lblDevices.Location = new Point(24, 528);
-            lblDevices.Name = "lblDevices";
-            lblDevices.Size = new Size(111, 23);
-            lblDevices.TabIndex = 42;
-            lblDevices.Text = "Dispositivos:";
-            // 
-            // btnReloadDevices
-            // 
-            btnReloadDevices.BackColor = Color.FromArgb(162, 70, 137);
-            btnReloadDevices.CausesValidation = false;
-            btnReloadDevices.Cursor = Cursors.Hand;
-            btnReloadDevices.FlatStyle = FlatStyle.Flat;
-            btnReloadDevices.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
-            btnReloadDevices.ForeColor = Color.White;
-            btnReloadDevices.Location = new Point(27, 564);
-            btnReloadDevices.Name = "btnReloadDevices";
-            btnReloadDevices.Size = new Size(87, 29);
-            btnReloadDevices.TabIndex = 8;
-            btnReloadDevices.Text = "Recargar";
-            btnReloadDevices.UseVisualStyleBackColor = false;
-            btnReloadDevices.Click += BtnReloadDevices_Click;
-            // 
-            // cbDevice
-            // 
-            cbDevice.CausesValidation = false;
-            cbDevice.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbDevice.FlatStyle = FlatStyle.Flat;
-            cbDevice.FormattingEnabled = true;
-            cbDevice.Location = new Point(120, 564);
-            cbDevice.Name = "cbDevice";
-            cbDevice.Size = new Size(258, 28);
-            cbDevice.TabIndex = 9;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.large_input_background;
-            pictureBox3.Location = new Point(24, 559);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(440, 38);
-            pictureBox3.TabIndex = 45;
-            pictureBox3.TabStop = false;
-            // 
-            // btnAddDevice
-            // 
-            btnAddDevice.BackColor = Color.MediumTurquoise;
-            btnAddDevice.CausesValidation = false;
-            btnAddDevice.Cursor = Cursors.Hand;
-            btnAddDevice.FlatStyle = FlatStyle.Flat;
-            btnAddDevice.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAddDevice.ForeColor = Color.White;
-            btnAddDevice.Location = new Point(380, 564);
-            btnAddDevice.Name = "btnAddDevice";
-            btnAddDevice.Size = new Size(80, 29);
-            btnAddDevice.TabIndex = 10;
-            btnAddDevice.Text = "Agregar";
-            btnAddDevice.UseVisualStyleBackColor = false;
-            btnAddDevice.Click += BtnAddDevice_Click;
             // 
             // odooDeviceBindingSource1
             // 
@@ -397,17 +310,12 @@
             AutoSize = true;
             BackColor = Color.White;
             CancelButton = btn_cancel;
-            ClientSize = new Size(488, 803);
+            ClientSize = new Size(488, 603);
             Controls.Add(label2);
             Controls.Add(cbNetwork);
             Controls.Add(label1);
             Controls.Add(lblCredentials);
             Controls.Add(dgvCredentials);
-            Controls.Add(btnAddDevice);
-            Controls.Add(cbDevice);
-            Controls.Add(btnReloadDevices);
-            Controls.Add(lblDevices);
-            Controls.Add(dgvDevices);
             Controls.Add(btn_reload_db);
             Controls.Add(cbDatabase);
             Controls.Add(cbBrowsers);
@@ -420,7 +328,6 @@
             Controls.Add(txtUrl);
             Controls.Add(lbl_login);
             Controls.Add(pic_url);
-            Controls.Add(pictureBox3);
             Controls.Add(dgvLogins);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
@@ -431,9 +338,7 @@
             ((System.ComponentModel.ISupportInitialize)pic_url).EndInit();
             ((System.ComponentModel.ISupportInitialize)pic_db).EndInit();
             ((System.ComponentModel.ISupportInitialize)pic_browser).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgvDevices).EndInit();
             ((System.ComponentModel.ISupportInitialize)odooDeviceBindingSource).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)odooDeviceBindingSource1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvCredentials).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvLogins).EndInit();
@@ -455,12 +360,6 @@
         private ComboBox cbBrowsers;
         private ComboBox cbDatabase;
         private Button btn_reload_db;
-        private DataGridView dgvDevices;
-        private Label lblDevices;
-        private Button btnReloadDevices;
-        private ComboBox cbDevice;
-        private PictureBox pictureBox3;
-        private Button btnAddDevice;
         private BindingSource odooDeviceBindingSource;
         private BindingSource odooDeviceBindingSource1;
         private DataGridView dgvCredentials;

@@ -51,6 +51,7 @@
             chKiosk = new CheckBox();
             lblIdentifier = new Label();
             lblVersion = new Label();
+            txtIdentifier = new TextBox();
             ((System.ComponentModel.ISupportInitialize)company_logo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbUser).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -318,9 +319,9 @@
             lblIdentifier.ForeColor = Color.SlateBlue;
             lblIdentifier.Location = new Point(24, 118);
             lblIdentifier.Name = "lblIdentifier";
-            lblIdentifier.Size = new Size(127, 20);
+            lblIdentifier.Size = new Size(44, 20);
             lblIdentifier.TabIndex = 30;
-            lblIdentifier.Text = "00:1A:2B:3C:4D:5E";
+            lblIdentifier.Text = "WI-FI";
             lblIdentifier.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblVersion
@@ -336,6 +337,16 @@
             lblVersion.Text = "v1.0.1.1";
             lblVersion.TextAlign = ContentAlignment.MiddleRight;
             // 
+            // txtIdentifier
+            // 
+            txtIdentifier.BorderStyle = BorderStyle.None;
+            txtIdentifier.ForeColor = Color.SlateBlue;
+            txtIdentifier.Location = new Point(182, 118);
+            txtIdentifier.Name = "txtIdentifier";
+            txtIdentifier.Size = new Size(150, 20);
+            txtIdentifier.TabIndex = 33;
+            txtIdentifier.Text = "00:1A:2B:3C:4D:5E";
+            // 
             // MainForm
             // 
             AcceptButton = btnLogin;
@@ -343,7 +354,8 @@
             AutoScaleMode = AutoScaleMode.Dpi;
             AutoSize = true;
             BackColor = Color.White;
-            ClientSize = new Size(488, 613);
+            ClientSize = new Size(488, 603);
+            Controls.Add(txtIdentifier);
             Controls.Add(lblVersion);
             Controls.Add(lblIdentifier);
             Controls.Add(chKiosk);
@@ -405,5 +417,6 @@
         private Label lblIdentifier;
         private Label lblVersion;
         private Label lblBrowserVersion;
+        private TextBox txtIdentifier;
     }
 }
