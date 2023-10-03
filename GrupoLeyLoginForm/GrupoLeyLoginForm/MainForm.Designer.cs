@@ -328,14 +328,16 @@
             // 
             lblVersion.AutoSize = true;
             lblVersion.BackColor = Color.White;
+            lblVersion.Cursor = Cursors.Hand;
             lblVersion.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblVersion.ForeColor = Color.DarkSlateBlue;
             lblVersion.Location = new Point(404, 574);
             lblVersion.Name = "lblVersion";
             lblVersion.Size = new Size(57, 20);
             lblVersion.TabIndex = 32;
-            lblVersion.Text = "v1.0.1.1";
+            lblVersion.Text = "v1.0.1.2";
             lblVersion.TextAlign = ContentAlignment.MiddleRight;
+            lblVersion.Click += lblVersion_Click;
             // 
             // txtIdentifier
             // 

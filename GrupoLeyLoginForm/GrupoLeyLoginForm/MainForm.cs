@@ -7,10 +7,12 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
+using System.Diagnostics;
 using System.Net.Http.Headers;
 using System.Net.NetworkInformation;
 using System.Security.Principal;
 using System.Text;
+using System.Windows.Forms;
 using WebDriverManager;
 using WebDriverManager.DriverConfigs.Impl;
 using WebDriverManager.Helpers;
@@ -405,5 +407,10 @@ namespace GrupoLeyLoginForm
             btnViewNip.ForeColor = txtNip.UseSystemPasswordChar ? Color.DimGray : Color.Teal;
         }
         #endregion
+
+        private void lblVersion_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", AppDomain.CurrentDomain.BaseDirectory);
+        }
     }
 }
