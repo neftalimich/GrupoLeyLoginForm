@@ -342,6 +342,7 @@
             // txtIdentifier
             // 
             txtIdentifier.BorderStyle = BorderStyle.None;
+            txtIdentifier.CausesValidation = false;
             txtIdentifier.ForeColor = Color.SlateBlue;
             txtIdentifier.Location = new Point(182, 118);
             txtIdentifier.Name = "txtIdentifier";

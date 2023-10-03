@@ -87,7 +87,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>XwrA3ZEiAin1QuO3lgFB3uqB+qavNvHe5DfYaV3pxDA=</dsig:DigestValue>
+      <dsig:DigestValue>vfS+TBXuEX+bez78fUWnnBNvIfr6KagP4YQ/IPz7ldI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="GrupoLeyOdooLogin.dll.config" size="1769">
