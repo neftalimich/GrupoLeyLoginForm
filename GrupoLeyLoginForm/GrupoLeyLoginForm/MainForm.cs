@@ -212,6 +212,13 @@ namespace GrupoLeyLoginForm
         #region PreLogin
         private async Task<bool> PreLogin()
         {
+            if (string.IsNullOrEmpty(identifier))
+            {
+                lblMessage.Text = "Please select a valid network device.";
+                lblMessage.ForeColor = Color.PaleVioletRed;
+                return false;
+            }
+
             lblMessage.Text = "¡Cargando!";
             lblEmployeeName.Text = "Empleado";
 

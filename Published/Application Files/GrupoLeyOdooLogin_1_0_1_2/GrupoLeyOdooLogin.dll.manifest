@@ -81,13 +81,13 @@
       <dsig:DigestValue>4fM2SF1pvPE7HolJHYYfFlgcEFwoAnAlrL6QnMnfe7I=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="GrupoLeyOdooLogin.dll" size="524800">
+  <file name="GrupoLeyOdooLogin.dll" size="525312">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>vfS+TBXuEX+bez78fUWnnBNvIfr6KagP4YQ/IPz7ldI=</dsig:DigestValue>
+      <dsig:DigestValue>OoOXu+N5qc/lJOOpShnY9C7uUhUvulkDFYslJ1jqga8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="GrupoLeyOdooLogin.dll.config" size="1769">
@@ -105,16 +105,16 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>W/qEqOhiwCW4P180m9hzzdaS1BSZjREvGednlneJteM=</dsig:DigestValue>
+      <dsig:DigestValue>BG9Z+BAt2LxtMfJZlStTOWJSXcvkw8MjwLxpUc08mv0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="GrupoLeyOdooLogin.runtimeconfig.json" size="372">
+  <file name="GrupoLeyOdooLogin.runtimeconfig.json" size="458">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>DSp4MGmJyWjNc/SmtGLu8DcWOcu4eQJIAo4Sy6A1RFo=</dsig:DigestValue>
+      <dsig:DigestValue>YBIGLYblUb1QapC3Td+VcI9HtfEQ/6rQssb+JbeODyA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ICSharpCode.SharpZipLib.dll" size="258048">
